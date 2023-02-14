@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="container">
+        <form method="get">
+            <label class="field">
+                <span class="field__title">Name</span>
+                <input type="text" class="field__input" placeholder="Enter your name" required tabindex="1">
+            </label>
+    
+            <label class="field">
+                <span class="field__title">Email</span>
+                <input type="email" class="field__input" placeholder="Enter your email" tabindex="2">
+            </label>
+    
+            <label class="field">
+                <span class="field__title">Password</span>
+                <input type="password" class="field__input" placeholder="Enter your password" tabindex="3">
+            </label>
+    
+            <label class="field">
+                <span class="field__title">Date of birth</span>
+                <input type="date" class="field__input" placeholder="Ennter your birthday" tabindex="4">
+            </label>
+    
+            <label class="field">
+                <span class="field__title">Time of birth</span>
+                <input type="time" class="field__input" placeholder="Ennter your time of birth" tabindex="5">
+            </label>
+    
+            <label class="field">
+                <span class="field__title">Favourite color</span>
+                <input type="color" class="field__input" tabindex="6">
+            </label>
+    
+            <label class="field">
+                <span class="field__title">Age</span>
+                <input type="range" class="field__input age">
+            </label>
+    
+            <label class="field">
+                <span class="field__title">Bio</span>
+                <textarea  class="field__textarea"></textarea>
+            </label>
+    
+            <label class="field">
+                <span class="field__title">Language</span>
+                    <select class="field__select">
+                    <option value="Ukrainian">Ukrainian</option>
+                    <option value="English" selected>English</option>
+                    <option value="France">Français</option>
+                    <option value="Deutsch">Deutsch</option>                    
+                </select>
+            </label>
+    
+            <label class="checkbox">
+                <span class="checkbox___text">Love sport</span>
+                <input type="checkbox" class="checkbox__input">
+                <span class="checkbox__mark"></span>
+            </label>  
+              
+            <label class="switch">                
+                <span class="switch___text">Change color</span>
+                <input type="checkbox" class="switch__input"> 
+                <span class="switch__mark"></span>
+            </label>
+            <!-- Почему я не могу поменять цвет тексту с помощью свича? -->
+            <p class="lorem" style="padding-top: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi omnis vel, 
+                consequatur neque dolores, qui est. 
+            </p> 
+            <hr>
+            
+            <div class="pets">                
+                <p> Have pets</p>
+                <div>
+                    <label>
+                        <input type="radio" name="pets">
+                        <span class="radio__title">Cats</span>
+                    </label>  
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="pets">
+                        <span class="radio__title">Dogs</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="pets">
+                        <span class="radio__title">Other</span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="pets">
+                        <span class="radio__title">No</span>
+                    </label>
+                </div>   
+            </div>            
+    
+            <button type="submit">Send form</button>          
+        </form>        
+    </div>
+    
+    
+</body>
+</html>
